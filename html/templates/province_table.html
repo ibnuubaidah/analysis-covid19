@@ -1,0 +1,39 @@
+{% extends "main_layout.html" %}
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Grafik / Tabel
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ url_for('province') }}">Grafik</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('province_table') }}">Tabel</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-2 mb-2">
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Province</th>
+                <th>Island</th>
+                <th>New Cases</th>
+                <th>New Recovered</th>
+                <th>New Deaths</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for i, row in df.iterrows() %}
+            <tr>
+                <td>{{row.Province}}</td>
+                <td>{{row.Island}}</td>
+                <td>{{row.Cases}}</td>
+                <td>{{row.Recovered}}</td>
+                <td>{{row.Deaths}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

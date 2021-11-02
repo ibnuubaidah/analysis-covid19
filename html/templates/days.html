@@ -1,0 +1,104 @@
+{% extends "main_layout.html" %}
+{% block content %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Grafik / Tabel
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ url_for('days') }}">Grafik</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('days_table') }}">Tabel</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="card-group">
+    <div class="card">
+      <div class="card-body">
+        <center>
+          <h5 class="card-title">Grafik Bulan Januari</h5>
+          <img src="{{ url_for('static', filename='images/januari.jpeg') }}" class="card-img-top" alt="...">
+        </center>
+        <p class="card-text"></p>
+        <p class="card-text"><small class="text-muted">Last updated 9 July 2021</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <center>
+          <h5 class="card-title">Grafik Bulan Februari</h5>
+          <img src="{{ url_for('static', filename='images/februari.jpeg') }}" class="card-img-top" alt="...">
+        </center>
+        <p class="card-text"></p>
+        <p class="card-text"><small class="text-muted">Last updated 9 July 2021</small></p>
+      </div>
+    </div>
+</div>
+<div class="card-group">
+    <div class="card">
+      <div class="card-body">
+        <center>
+          <h5 class="card-title">Grafik Bulan Maret</h5>
+          <img src="{{ url_for('static', filename='images/maret.jpeg') }}" class="card-img-top" alt="...">
+        </center>
+        <p class="card-text"></p>
+        <p class="card-text"><small class="text-muted">Last updated 9 July 2021</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <center>
+          <h5 class="card-title">Grafik Bulan April</h5>
+          <img src="{{ url_for('static', filename='images/april.jpeg') }}" class="card-img-top" alt="...">
+        </center>
+        <p class="card-text"></p>
+        <p class="card-text"><small class="text-muted">Last updated 9 July 2021</small></p>
+      </div>
+    </div>
+</div>
+<div class="card-group">
+    <div class="card">
+      <div class="card-body">
+        <center>
+          <h5 class="card-title">Grafik Bulan Mei</h5>
+          <img src="{{ url_for('static', filename='images/mei.jpeg') }}" class="card-img-top" alt="...">
+        </center>
+        <p class="card-text"></p>
+        <p class="card-text"><small class="text-muted">Last updated 9 July 2021</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <center>
+          <h5 class="card-title">Grafik Bulan Juni</h5>
+          <img src="{{ url_for('static', filename='images/juni.jpeg') }}" class="card-img-top" alt="...">
+        </center>
+        <p class="card-text"></p>
+        <p class="card-text"><small class="text-muted">Last updated 9 July 2021</small></p>
+      </div>
+    </div>
+</div>
+<div class="card-group">
+    <div class="card">
+      <div class="card-body">
+        <center>
+          <h5 class="card-title">Grafik Bulan Juli</h5>
+          <img src="{{ url_for('static', filename='images/juli.jpeg') }}" class="card-img-top" alt="...">
+        </center>
+        <p class="card-text"></p>
+        <p class="card-text"><small class="text-muted">Last updated 9 July 2021</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <center>
+          <h5 class="card-title">Grafik All</h5>
+          <img src="{{ url_for('static', filename='images/perhari.jpeg') }}" class="card-img-top" alt="...">
+        </center>
+        <p class="card-text"></p>
+        <p class="card-text"><small class="text-muted">Last updated 9 July 2021</small></p>
+      </div>
+    </div>
+</div>
+{% endblock %}

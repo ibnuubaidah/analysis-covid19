@@ -1,0 +1,39 @@
+
+{% extends "main_layout.html" %}
+{% block content %}
+<div class="container mt-1 mb-1">
+    <h1> <center><strong>Data Analytic Covid-19 Indonesia 2021</strong></center></h1>
+    <h5><center>Andi Ainun Najib | Amar Ma'ruf | Ibnu Da'wan Salim Ubaidah</center></h5>
+    <center><p>Berikut adalah grafik data covid-19 pada periode 2021, Pada kasus menampilkan grafik jumlah kasus tiap bulannya, bar berwarna kuning menandakan new cases,
+      dan bar berwarna hijau menandakan jumlah pasien yang sembuh, dan bar berwarna merah menandakan jumlah kematian pasien covid pada periode 2021
+    </p></center>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Perkembangan Covid-19 Indonesia 2021 (Per Hari)</h5>
+            <center>
+                <img src="{{ url_for('static', filename='images/perhari.jpeg') }}" class="card-img-bottom" alt="grafik per hari">
+            </center>
+            <p class="card-text"><small class="text-muted">Last updated 9 July 2021</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Perkembangan Covid-19 Indonesia 2021 (Per Bulan)</h5>
+            <center>
+                <img src="{{ url_for('static', filename='images/perbulan.jpeg') }}" class="card-img-bottom" alt="grafik per bulan">
+            </center>
+            <p class="card-text"><small class="text-muted">Last updated 9 July 2021</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Perkembangan Covid-19 Indonesia 2021 (Per Provinsi)</h5>
+            <center>
+                <img src="{{ url_for('static', filename='images/perprovinsi.jpg') }}" class="card-img-bottom" alt="grafik per provinsi">
+            </center>
+            <p class="card-text"><small class="text-muted">Last updated 9 July 2021</small></p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

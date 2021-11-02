@@ -1,0 +1,28 @@
+{% extends "main_layout.html" %}
+{% block content %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+  <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Grafik / Tabel
+      </button>
+      <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="{{ url_for('province') }}">Grafik</a></li>
+          <li><a class="dropdown-item" href="{{ url_for('province_table') }}">Tabel</a></li>
+      </ul>
+  </div>
+</nav>
+
+<div class="card-group">
+    <div class="card">
+      <div class="card-body">
+        <center>
+          <h5 class="card-title">Grafik Per Provinsi</h5>
+          <img src="{{ url_for('static', filename='images/perprovinsi.jpg') }}" alt="..." width="80%">
+        </center>
+        <p class="card-text"></p>
+        <p class="card-text"><small class="text-muted">Last updated 9 July 2021</small></p>
+      </div>
+    </div>
+</div>
+{% endblock %}
